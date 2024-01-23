@@ -1,5 +1,5 @@
 # presidency_project
-![ReadMe header](images/readme_header.png)
+![ReadMe header](images/readmeheader.png)
 
 ## Background
 
