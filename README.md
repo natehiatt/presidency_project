@@ -2,16 +2,12 @@
 ![ReadMe header](images/readmeheader.png)
 
 ## Background
-The texts used were [Republican/Democratic National Convention Speeches](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/convention-speeches), [Inaugural Addresses](https://www.presidency.ucsb.edu/documents/app-categories/spoken-addresses-and-remarks/presidential/inaugural-addresses) and [Presidential Debates Transcripts](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/debates). We used BeautifulSoup to pull selected texts into a dataframe for cleaning. Because the debate transcripts were only available from 1960 and sooner, that was also the cut off date for the other two text sources we used.
+In this project, we've gathered a rich collection of political texts, including speeches from [The Republican/Democratic National Convention](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/convention-speeches), [Presidential Inaugural Addresses](https://www.presidency.ucsb.edu/documents/app-categories/spoken-addresses-and-remarks/presidential/inaugural-addresses) and [transcripts of Presidential Debates](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/debates). These texts were sourced from the University of California, Santa Barbara's Presidency Project website. The collection focuses on material from 1960 onwards, as this is the period from which we have complete debate transcripts available. We utilized BeautifulSoup for web scraping, effectively extracting the texts and integrating them into a structured dataframe for further processing.
 
-## Data Understanding
+## Data Understanding and Preparation
+Our initial dataset comprised over 100 distinct texts, each associated with a name and year. The first step in our data preparation involved tokenizing the textual content. We employed Python and the Natural Language Toolkit (nltk) for this purpose, segmenting the texts into individual tokens. This tokenization process resulted in a single list object, with each token as an element. The tokenized data was then fed into our analytical pipeline, where it was vectorized to facilitate modeling. 
 
-
-## Data Preparation
-To prepare the data for modeling and analysis, we 
-
-
-## Modelling
+## Modeling
 We instatiate a Multinomial Naive Bayes model. This model uses Bayes probability to statistically test the hypothesis that a text of a document belongs to a certain class (in this case, a political party). We also instatiate a Tf-Idf Vectorizer. This type of vectorizer is very powerful for content-based classification because adds importance weight to certain tokens using a tf-idf score. The higher the tf-idf score, the more important that word is in that document compared to how important it is in all the documents. 
 
 We also instatiated a Guassian Bayes model, which is specific to binary classification tasks.
