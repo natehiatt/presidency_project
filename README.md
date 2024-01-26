@@ -1,4 +1,4 @@
-# presidency_project
+# Predictive NLP Classification of Presidential Rhetoric
 ![ReadMe header](images/readmeheader.png)
 
 ## Background
