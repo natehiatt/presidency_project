@@ -3,11 +3,14 @@ Nate Hiatt (natehiatt@gmail.com), Nathan Bass, Shelley Wang (ShelleyLWang@gmail.
 ![ReadMe header](images/readmeheader.png)
 
 ## Background
+The texts used were [Republican/Democratic National Convention Speeches](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/convention-speeches), [Inaugural Addresses](https://www.presidency.ucsb.edu/documents/app-categories/spoken-addresses-and-remarks/presidential/inaugural-addresses) and [Presidential Debates Transcripts](https://www.presidency.ucsb.edu/documents/app-categories/elections-and-transitions/debates). We used BeautifulSoup to pull selected texts into a dataframe for cleaning. Because the debate transcripts were only available from 1960 and sooner, that was also the cut off date for the other two text sources we used.
 
 ## Data Understanding
 
 
 ## Data Preparation
+To prepare the data for modeling and analysis, we 
+
 
 ## Modelling
 We instatiate a Multinomial Naive Bayes model. This model uses Bayes probability to statistically test the hypothesis that a text of a document belongs to a certain class (in this case, a political party). We also instatiate a Tf-Idf Vectorizer. This type of vectorizer is very powerful for content-based classification because adds importance weight to certain tokens using a tf-idf score. The higher the tf-idf score, the more important that word is in that document compared to how important it is in all the documents. 
