@@ -1,4 +1,5 @@
 # Predictive NLP Classification of Presidential Rhetoric
+Nate Hiatt (natehiatt@gmail.com), [Nathan Bass](https://www.linkedin.com/in/nathan-bass-828794149/), [Shelley Wang](https://www.linkedin.com/in/shelleywang22/)(ShelleyLWang@gmail.com)
 ![ReadMe header](images/readmeheader.png)
 
 ## Background
